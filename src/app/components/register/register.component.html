@@ -1,0 +1,29 @@
+<div class="bg-violet-300	w-1/4 rounded-xl px-5 py-8 mx-auto mt-32">
+    <h1 class="font-bold text-2xl text-center">Registrate</h1>
+    
+    <form class="mt-6" [formGroup]="formRegister">
+        <div class="text-center">
+            <div class="my-2">
+                <label for="email">Correo</label>
+            </div>
+            <div>
+                <input type="text" placeholder="Ingresar Email" class="rounded-lg px-4 py-2" formControlName="email">
+            </div>
+        </div>
+
+        <div class="mt-6 text-center">
+            <div class="my-2">
+                <label for="email">Password</label>
+            </div>
+            <div>
+                <input type="password" placeholder="Ingresar Email" class="rounded-lg px-4 py-2" formControlName="password">
+            </div>
+        </div>
+
+        <div class="mt-6 text-center">
+            <button class="bg-violet-500 hover:bg-violet-800 hover:text-white px-4 py-2 rounded-lg" (click)="onSubmit()">Registrar</button>
+        </div>
+
+
+    </form>
+</div>
